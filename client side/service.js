@@ -21,7 +21,7 @@ MDS.init(function(msg) {
     
     MDS.log('Received MAXIMA message: ' + JSON.stringify(msg));
     
-    if (msg.data.application !== "dmaxab") return;
+    if (msg.data.application !== "minidocs") return;
     
     MDS.log('Received data: ' + msg.data.data);
 
