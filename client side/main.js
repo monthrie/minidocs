@@ -17,6 +17,9 @@ document.getElementById('questionForm').addEventListener('submit', function(even
             ]
         })
     })
+ 
+
+
     .then(response => response.json())
     .then(data => {
         document.getElementById('answer').innerText = data.content;

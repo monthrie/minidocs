@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script type="text/javascript" src="mds.js"></script>
+    <script type="text/javascript" src="service.js"></script>
     <title>Minidocs Experiment</title>
     <style>
+        #banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            width: 100%;
+            background-color: #d8d8d8;
+            text-align: center;
+            padding: 10px 0;
+        }
+        #donate {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(98, 0, 255);
+            color: white;
+            border-radius: 50%; /* This makes the button round */
+            text-align: center;
+            line-height: 100px; /* This vertically centers the text */
+            font-size: 16px;
+            text-decoration: none; /* This removes the underline from the link */
+            margin-top: 20px;
+        }
         body {
+            padding-top: 50px; 
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -12,6 +39,10 @@
             margin: 0;
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
         }
 
         #questionForm {
@@ -56,12 +87,16 @@
         }
     </style>
 </head>
-<body>
+<body>  
+    <div id="banner">
+        <h1>Minidocs Experiment</h1>
+    </div>
     <form id="questionForm">
-        <input type="text" id="question" placeholder="Enter your question here">
+        <input type="text" id="question" placeholder="Enter your question about Minima here">
         <input type="submit" id="submit" value="Ask">
     </form>
     <div id="answer"></div>
     <script src="main.js"></script>
 </body>
 </html>
+

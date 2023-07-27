@@ -5,6 +5,19 @@
     <script type="text/javascript" src="service.js"></script>
     <title>Minidocs Experiment</title>
     <style>
+        #donate {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(98, 0, 255);
+            color: white;
+            border-radius: 50%; /* This makes the button round */
+            text-align: center;
+            line-height: 100px; /* This vertically centers the text */
+            font-size: 16px;
+            text-decoration: none; /* This removes the underline from the link */
+            margin-top: 20px;
+        }
         body {
             display: flex;
             flex-direction: column;
@@ -14,6 +27,10 @@
             margin: 0;
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
         }
 
         #questionForm {
@@ -59,11 +76,13 @@
     </style>
 </head>
 <body>
+    <h1>Minidocs Experiment</h1>
     <form id="questionForm">
         <input type="text" id="question" placeholder="Enter your question here">
         <input type="submit" id="submit" value="Ask">
     </form>
     <div id="answer"></div>
+    <a href="donate.html" id="donate">Donate</a>
     <script src="main.js"></script>
 </body>
 </html>
